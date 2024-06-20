@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --text: black;
+    --container-bg: rgb(229, 223, 223);
+    --form-bg: white;
+    --box-shadow: rgba(100, 100, 111, 0.2);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background-color: beige;
+    /* background-image:url(/img/april.jpeg);
+    background-size: cover; */
+}
+
+h1 {
+    color: #930ce7;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--form-bg);
+    border-radius: 10px;
+    padding: 3rem;
+    /* box-shadow: var(--box-shadow) 0px 7px 29px 0px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+    box-shadow: var(--box-shadow) 0px 7px 29px 0px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid #4e0eff;
+    color: var(--text);
+    align-items: center;
+    border-radius: 0.4rem;
+
+}
+
+.inputs>span {
+    padding: 10px;
+}
+
+.inputs>input {
+    color: var(--text);
+    background-color: transparent;
+    padding: 1rem 1rem 1rem 0;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.inputs:focus-within
+{
+    border: 3px solid #930ce7;
+}
+
+
+
+form>button {
+    background-color: #997af0;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+form>button:hover {
+    background-color: #4e0eff;
+}
+
+
+
+form>span {
+    color: var(--text);
+    text-transform: uppercase;
+}
+
+form>span>a {
+    color: #4e0eff;
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: white;
+        --container-bg: #131324;
+        --form-bg: #00000076;
+        --box-shadow: rgba(46, 46, 47, 0.2);
+    }
+}
+a
+{
+    align-self: center;
+    color: #4e0eff;
+    text-decoration: none;
+  transform: translateY(-100%);
+}
