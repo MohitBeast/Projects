@@ -1,0 +1,6 @@
+The chatbot is ready to use, but it has two different modes.
+
+In the first mode, I did not use an API. Instead, predefined questions and answers are provided, so the chatbot replies based on the given inputs.
+
+In the second mode, there is a separate section where the proper API code is already written but currently commented out. To activate this mode, we simply need to uncomment and
+enable the API and use that existing code.
